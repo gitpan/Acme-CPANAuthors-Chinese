@@ -7,5 +7,6 @@ META.yml
 MYMETA.json
 README
 t/00-load.t
+t/01-test.t
 t/pod.t
 META.json                                Module JSON meta-data (added by MakeMaker)

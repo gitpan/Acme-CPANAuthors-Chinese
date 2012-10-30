@@ -4,7 +4,7 @@
       "Fayland Lam <fayland@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Module::Build version 0.3607, CPAN::Meta::Converter version 2.112150",
+   "generated_by" : "Module::Build version 0.3607, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -16,7 +16,7 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : 0
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "configure" : {
@@ -26,8 +26,8 @@
       },
       "runtime" : {
          "requires" : {
-            "Acme::CPANAuthors" : 0,
-            "Test::More" : 0
+            "Acme::CPANAuthors" : "0",
+            "Test::More" : "0"
          }
       }
    },
