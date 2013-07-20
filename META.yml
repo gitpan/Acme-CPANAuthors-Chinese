@@ -1,24 +1,23 @@
 ---
-abstract: 'We are chinese CPAN authors'
+abstract: unknown
 author:
-  - 'Fayland Lam <fayland@gmail.com>'
+  - unknown
 build_requires:
-  Test::More: 0
+  ExtUtils::MakeMaker: 0
 configure_requires:
-  Module::Build: 0.40
+  ExtUtils::MakeMaker: 0
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921'
-license: perl
+generated_by: 'ExtUtils::MakeMaker version 6.64, CPAN::Meta::Converter version 2.120921'
+license: unknown
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Acme-CPANAuthors-Chinese
-provides:
-  Acme::CPANAuthors::Chinese:
-    file: lib/Acme/CPANAuthors/Chinese.pm
-    version: 0.27
+no_index:
+  directory:
+    - t
+    - inc
 requires:
   Acme::CPANAuthors: 0
-resources:
-  license: http://dev.perl.org/licenses/
-version: 0.27
+  Test::More: 0
+version: 0.28

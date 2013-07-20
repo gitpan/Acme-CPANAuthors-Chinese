@@ -1,46 +1,42 @@
 {
-   "abstract" : "We are chinese CPAN authors",
+   "abstract" : "unknown",
    "author" : [
-      "Fayland Lam <fayland@gmail.com>"
+      "unknown"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "ExtUtils::MakeMaker version 6.64, CPAN::Meta::Converter version 2.120921",
    "license" : [
-      "perl_5"
+      "unknown"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
    "name" : "Acme-CPANAuthors-Chinese",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "inc"
+      ]
+   },
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::More" : "0"
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.40"
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "runtime" : {
          "requires" : {
-            "Acme::CPANAuthors" : "0"
+            "Acme::CPANAuthors" : "0",
+            "Test::More" : "0"
          }
       }
    },
-   "provides" : {
-      "Acme::CPANAuthors::Chinese" : {
-         "file" : "lib/Acme/CPANAuthors/Chinese.pm",
-         "version" : "0.27"
-      }
-   },
    "release_status" : "stable",
-   "resources" : {
-      "license" : [
-         "http://dev.perl.org/licenses/"
-      ]
-   },
-   "version" : "0.27"
+   "version" : "0.28"
 }
