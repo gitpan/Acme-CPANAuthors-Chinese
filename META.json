@@ -1,10 +1,10 @@
 {
    "abstract" : "We are Chinese CPAN authors",
    "author" : [
-      "Fayland Lam <fayland@gmail.com>"
+      "Fayland Lam, C<< <fayland at gmail.com> >>"
    ],
-   "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.421",
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Milla version v1.0.9, Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "perl_5"
    ],
@@ -13,34 +13,57 @@
       "version" : "2"
    },
    "name" : "Acme-CPANAuthors-Chinese",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples"
+      ]
+   },
    "prereqs" : {
-      "build" : {
-         "requires" : {
-            "Test::More" : "0"
-         }
-      },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.42"
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Dist::Milla" : "v1.0.9",
+            "Test::Pod" : "1.41"
          }
       },
       "runtime" : {
          "requires" : {
-            "Acme::CPANAuthors" : "0"
+            "Acme::CPANAuthors" : "0",
+            "perl" : "5.008005"
          }
-      }
-   },
-   "provides" : {
-      "Acme::CPANAuthors::Chinese" : {
-         "file" : "lib/Acme/CPANAuthors/Chinese.pm",
-         "version" : "0.33"
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0.96"
+         }
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "license" : [
-         "http://dev.perl.org/licenses/"
-      ]
+      "bugtracker" : {
+         "web" : "https://github.com/PerlChina/Acme-CPANAuthors-Chinese/issues"
+      },
+      "homepage" : "https://github.com/PerlChina/Acme-CPANAuthors-Chinese",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/PerlChina/Acme-CPANAuthors-Chinese.git",
+         "web" : "https://github.com/PerlChina/Acme-CPANAuthors-Chinese"
+      }
    },
-   "version" : "0.33"
+   "version" : "0.34",
+   "x_contributors" : [
+      "fayland <fayland@gmail.com>",
+      "unknown <Administrator@.(none)>",
+      "unknown <LinDao@.(none)>"
+   ]
 }
+
